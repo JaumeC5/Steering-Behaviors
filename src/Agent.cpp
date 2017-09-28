@@ -92,6 +92,7 @@ void Agent::update(Vector2D steering_force, float dtime, SDL_Event *event)
 		break;
 	}
 
+
 	Vector2D acceleration = steering_force / mass;
 	velocity = velocity + acceleration * dtime;
 	velocity = velocity.Truncate(max_velocity);

@@ -1,4 +1,3 @@
-
 #include "SceneKinematicSeek.h"
 
 using namespace std;

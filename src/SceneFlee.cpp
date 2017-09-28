@@ -5,7 +5,7 @@ using namespace std;
 SceneFlee::SceneFlee()
 {
 	Agent *agent = new Agent;
-	agent->setPosition(Vector2D(640, 360));
+	agent->setPosition(Vector2D(640,360));
 	agent->setTarget(Vector2D(640, 360));
 	agent->loadSpriteTexture("../res/soldier.png", 4);
 	agents.push_back(agent);
@@ -35,7 +35,7 @@ void SceneFlee::update(float dtime, SDL_Event *event)
 	default:
 		break;
 	}
-	Vector2D steering_force = agents[0]->Behavior()->Flee(agents[0], agents[0]->getTarget(), dtime);
+	Vector2D steering_force = agents[0]->Behavior()->Flee(agents[0],agents[0]->getTarget(),dtime);
 	agents[0]->update(steering_force, dtime, event);
 }
 
@@ -47,5 +47,5 @@ void SceneFlee::draw()
 
 const char* SceneFlee::getTitle()
 {
-	return "SDL Steering Behaviors :: KinematicFlee Demo";
+	return "SDL Steering Behaviors :: Flee Demo";
 }

@@ -5,8 +5,8 @@
 #include "SDL_SimpleApp.h"
 #include "SceneKinematicSeek.h"
 #include "SceneKinematicFlee.h"
-#include "SceneFlee.h"
 #include "SceneSeek.h"
+#include "SceneFlee.h"
 
 
 using namespace std;
@@ -54,7 +54,6 @@ int main(int argc, char ** argv)
 				curr_scene = new SceneFlee;
 				app->setWindowTitle(curr_scene->getTitle());
 			}
-
 			if ((event.key.keysym.scancode == SDL_SCANCODE_Q) || (event.key.keysym.scancode == SDL_SCANCODE_ESCAPE))
 			{
 				quit = true;

@@ -1,4 +1,3 @@
-
 #include "SceneSeek.h"
 
 using namespace std;
@@ -6,7 +5,7 @@ using namespace std;
 SceneSeek::SceneSeek()
 {
 	Agent *agent = new Agent;
-	agent->setPosition(Vector2D(640, 360));
+	agent->setPosition(Vector2D(640,360));
 	agent->setTarget(Vector2D(640, 360));
 	agent->loadSpriteTexture("../res/soldier.png", 4);
 	agents.push_back(agent);
@@ -48,5 +47,5 @@ void SceneSeek::draw()
 
 const char* SceneSeek::getTitle()
 {
-	return "SDL Steering Behaviors :: KinematicSeek Demo";
+	return "SDL Steering Behaviors :: Seek Demo";
 }
