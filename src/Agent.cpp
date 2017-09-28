@@ -15,6 +15,7 @@ Agent::Agent() : sprite_texture(0),
 	             sprite_w(0),
 	             sprite_h(0),
 	             draw_sprite(false)
+	
 {
 	steering_behavior = new SteeringBehavior;
 }
